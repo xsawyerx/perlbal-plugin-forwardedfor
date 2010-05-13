@@ -33,9 +33,6 @@ sub register {
     return 1;
 } 
 
-#sub unregister {1}
-#sub unload     {1}
-
 sub rewrite_header {
     my ( $svc, $target_header ) = @_;
     my $headers     = $svc->{'req_headers'};
@@ -86,7 +83,7 @@ In your Perlbal configuration:
     CREATE SERVICE http_balancer
       SET role      = reverse_proxy
       SET pool      = machines
-      SET plugins   = RewriteHeader
+      SET plugins   = ForwardedFor
       FORWARDED_FOR = X-Perlbal-Forwarded-For
 
 =head1 SUBROUTINES/METHODS
