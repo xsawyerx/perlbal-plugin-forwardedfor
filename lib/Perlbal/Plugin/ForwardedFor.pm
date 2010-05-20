@@ -72,9 +72,9 @@ Version 0.01
 
 This plugin changes the header Perlbal will use to delcare itself as a proxy.
 
-Usually Perlbal will add itself to X-Forwarded-For, but this plugins allows you
-to change that to any header you want, so you coudl differ Perlbal from other
-possible proxies the user might have.
+Usually Perlbal will - perl RFC - add itself to X-Forwarded-For, but this
+plugins allows you to change that to any header you want, so you could differ
+Perlbal from other possible proxies the user might have.
 
 In your Perlbal configuration:
 
