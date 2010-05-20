@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Perlbal;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my $target_header;
 
@@ -66,7 +66,7 @@ Perlbal::Plugin::ForwardedFor - Rename the X-Forwarded-For header in Perlbal
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 SYNOPSIS
 
